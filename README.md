@@ -2,11 +2,10 @@
 
     ./gradlew build
 
-##### build Docker image called java-app. Execute from root
+##### build Docker image called my-project. Execute from root
 
-    docker build -t java-app .
+    docker build -tag my-project .
     
 ##### push image to repo 
-
-    docker tag java-app demo-app:java-1.0
-    
+    docker login
+    docker push shobuntu0/my-project:tagname
