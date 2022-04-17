@@ -4,7 +4,7 @@ EXPOSE 8080
 
 ARG JAR_FILE="java-app-1.0-SNAPSHOT.jar"
 
-RUN cp ./build/libs/${JAR_FILE} /usr/app/${JAR_FILE}
+COPY --from=compile "./build/libs/${JAR_FILE}" /usr/app/
 
 WORKDIR /usr/app
 
