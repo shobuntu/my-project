@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-project-deployment
+  lables:
+    app: nginx
 spec:
   selector:
     matchLabels:
@@ -14,6 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: shobuntu0/my-project
+#          image: nginx:1.14.2
+          image: shobuntu0/my-project:latest
           ports:
             - containerPort: 80
