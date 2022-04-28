@@ -52,6 +52,7 @@ data:
             in_cluster: true
             namespace: ${POD_NAMESPACE}
 ---
+
 #apiVersion: extensions/v1
 apiVersion: apps/v1
 kind: DaemonSet
