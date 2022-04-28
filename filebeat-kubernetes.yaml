@@ -1,3 +1,5 @@
+# This script is under development.
+
 ---
 apiVersion: v1
 kind: ConfigMap
