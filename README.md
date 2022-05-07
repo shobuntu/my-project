@@ -6,6 +6,6 @@
 
     docker build -tag my-project .
     
-##### push image to repo 
-    docker login
-    docker push shobuntu0/my-project:tagname
+##### pull image from repo 
+
+    docker pull shobuntu0/my-project:latest
